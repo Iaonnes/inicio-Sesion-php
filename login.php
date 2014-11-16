@@ -1,0 +1,1 @@
+<?phpsession_start();if($_POST ['username'] !="" AND $_POST['password'] !=""){	if($_POST['username']=="ieosh12" and $_POST['password']== "juan_12" ){		$_SESSION['admin'] = $_POST['username'];	} else {		$_SESSION['error'] = "Usuario o contrase&ntilde;a Incorrecta";		}} else {	$_SESSION['llene'] = "Complete lo campos";}header("location:index.php");?>
